@@ -1,0 +1,487 @@
+
+:root {
+    --color-primario: #0071ce;
+    --color-secundario: #ffc220;
+    --fuente-titulo:'Bowlby One', cursive;
+}
+
+/*Reseteo de estilos*/
+* {
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.trans {
+    width: 90%;
+    margin: auto;
+}
+
+/*Configuracion header*/
+
+header {
+    margin-bottom: 3em;
+}
+
+header .trasn-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width:300px;
+}
+
+header .menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu ul li {
+    list-style: none;
+}
+
+header .menu ul li a{
+    color: var(--color-primario);
+    text-decoration: solid;
+    font-size: 16px;
+    padding: 0 0.5em 0 2em;
+}
+
+header .menu ul li a:hover{
+    color: var(--color-secundario);
+    text-decoration: underline;
+    transition: 1s;
+}
+
+header .login {
+    padding: 0 2em 0 2em;
+    color:var(--color-primario);
+    text-decoration: solid;
+    background-color: var(--color-secundario);
+    border-radius: 20px;
+    text-align: center;
+}
+
+header .login a:hover {
+    color: white;
+    transition: 1s;
+    background-color: var(--color-secundario);
+}
+/*Fin header*/
+
+
+/*Configuracion Section*/
+
+article .textoimagen1 {
+    display: flex;
+    margin-bottom: 4em;
+}
+
+h1 {
+    font-family: 'Bowlby One', cursive;
+    font-size: 30px;
+    margin-bottom: 0.5em;
+}
+
+.about h1 {
+    color: white;
+    font-family: 'Bowlby One', cursive;
+    font-size: 30px;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    color: white;
+    font-family: 'Bowlby One', cursive;
+    font-size: 30px;
+}
+
+article .textoimagen1 .img_1 {
+    display: flex;
+    align-items: center;
+}
+
+article .textoimagen1 .img_1 img{
+    width: 250px;
+    margin-left: 20px;
+}
+
+article .textoimagen2 .images {
+    display: flex;
+    justify-content: space-around;
+}
+
+article .textoimagen2 .images .img_2 {
+    margin: 1.8em 1.25em 0.6em 1.25em;
+    border: 1px solid gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article .textoimagen2 .texto2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.6em 0em 3em 0em;
+}
+
+/*Fin section*/
+
+/*Inicio Footer*/
+
+footer {
+    
+    background-color: var(--color-primario);
+    padding-bottom: 1.25em;
+}
+
+footer .caja1 {
+    margin-bottom: 2em;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .caja2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .caja2 ul {
+    display: flex;       
+}
+
+footer .caja2 ul li {
+    list-style: none;
+    margin: 0 10px 0 10px;
+}
+
+footer .fa-brands {
+    color: var(--color-secundario);
+    font-size: 35px;
+}
+
+footer .caja3 {
+    display: flex;
+    align-items: flex-start;
+}
+    
+footer .caja3 ul li {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    margin: 0 50px 0px 50px;
+}
+
+footer .caja3 ul li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer .piepagina {
+    width: 90%;
+    margin: auto;
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:  solid white;
+}
+
+footer .piepagina .logopie {
+    width: 200px;
+}
+
+footer .piepagina .signup a {
+    padding: 7px 16px;
+    color:white;
+    text-decoration: solid;
+    background-color: var(--color-secundario);
+    border-radius: 40px;
+}
+
+footer .piepagina .signup a:hover {
+    color: var(--color-primario);
+    transition: 1s;
+    background-color: var(--color-secundario);
+}
+/*Fin footer*/
+ 
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+
+    header .trasn-header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        width:250px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .login {
+        display: flex;
+        justify-content:center;
+    }
+
+    article .textoimagen1 {
+        flex-direction: column;
+    }
+
+    article .textoimagen2 .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    article .textoimagen1 .img_1 {
+        justify-content: center;
+    }
+
+    h1 {
+        font-family: 'Bowlby One', cursive;
+        font-size: 30px;
+        margin-bottom: 0.5em;
+    }
+
+    .about h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 0.5em;
+    }
+    
+    h3 {
+        color: white;
+        font-family: 'Bowlby One', cursive;
+        font-size: 0px;
+    }
+
+    p {
+        font-size: 16px;  
+    }
+
+    footer .caja1 .caja2 {
+        flex-direction: column;
+    }
+    
+    footer .caja1 .caja3 {
+        flex-wrap: wrap;
+    }
+
+    footer .fa-brands {
+        font-size: 30px;
+    }
+
+    footer .piepagina .logopie {
+        width: 200px;
+    }
+
+    footer .caja3 ul li {
+        margin: 0 20px 0px 20px;
+    }
+    
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+
+
+    header .trasn-header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        width:250px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .login {
+        display: flex;
+        justify-content:center;
+    }
+
+    article .textoimagen1 {
+        flex-direction: column;
+    }
+
+    article .textoimagen2 .images {
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+
+    article .textoimagen1 .img_1 {
+        justify-content: center;
+    }
+
+    h1 {
+        font-family: 'Bowlby One', cursive;
+        font-size: 30px;
+        margin-bottom: 0.5em;
+    }
+
+    .about h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 14px;
+        margin-bottom: 0.5em;
+    }
+    
+    h3 {
+        color: white;
+        font-family: 'Bowlby One', cursive;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;  
+    }
+
+    footer .caja1 {   
+        flex-wrap: wrap;
+    }
+
+    footer .caja1 .caja2 {
+        flex-wrap: wrap;
+    }
+    
+    footer .caja1 .caja3 {
+        flex-wrap: wrap;
+    }
+
+    footer .fa-brands {
+        font-size: 30px;
+    }
+
+    footer .caja3 ul li {
+        margin: 0 20px 0px 20px;
+    }
+
+    footer .piepagina .logopie {
+        width: 150px;
+    }
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+
+
+
+    header .trasn-header {
+        flex-direction: column;
+    }
+
+
+    header .menu ul {
+        flex-direction: column;
+    }
+
+    header .logo {
+        width:200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .login {
+        display: flex;
+        justify-content:center;
+    }
+
+    article .textoimagen1 {
+        flex-direction: column;
+    }
+
+    article .textoimagen2 .images {
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+
+    h1 {
+        font-family: 'Bowlby One', cursive;
+        font-size: 20px;
+        margin-bottom: 0.5em;
+    }
+    
+    h2 {
+        color: black;
+        font-size: 14px;
+        margin-bottom: 0.5em;
+    }
+    
+    h3 {
+        color: white;
+        font-family: 'Bowlby One', cursive;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;  
+    }
+
+    footer .caja1 {   
+        flex-direction: column;
+    }
+
+    footer .caja1 .caja2 {
+        flex-direction: column;
+    }
+    
+    footer .caja1 .caja3 {
+        flex-wrap: wrap;
+    }
+
+    footer .caja3 ul li {
+        margin: 0 20px 0px 20px;
+    }
+
+    footer .fa-brands {
+        font-size: 30px;
+    }
+
+    footer .piepagina .logopie {
+        width: 100px;
+    }
+
+
+
+
+
+
+
+   
+
+
+
+
+
+}
